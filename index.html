@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<!--
+	Caminar by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Housing Prices</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="#">Housing Prices in the US
+					<br><br>
+					<span>by Katherine, Jessica, Joey and Rita</span></a></div>
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						<div class="image fit flush">
+							<img src="images/housesale.jpg" alt="" />
+						</div>
+						<header class="special">
+							<h2>Rising Housing Prices</h2>
+							<p>An Exploration of Zillow Data</p>
+						</header>
+						<div class="content">
+							<p>We’re seeing one of the longest periods of economic growth in US history.
+								When the housing market crashed in 2008, it led to one of the worst economic
+								periods since the Great Depression, often called the Great Recession. The economy did
+                                not quickly recover, but has rather grown steadily each year since the crash.
+								Over a decade after the Great Recession, unemployment is the lowest it has been in 50 years,
+								wages are rising at a faster rate, and consumers continue to spend more, which fuels the economy.
+								As the economy grew, home prices rose rapidly across the country.
+								Since 2012, the number of eager home buyers increased faster than the number of homes
+								for sale – demand outpaced supply.
+							</p>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="wrapper style2">
+						<header>
+							<h3 style="color:white">What are your assumptions?</h3>
+							<h7>Take a look at the four houses pictured below. Rank them in order of least to most
+							expensive using the price scale located below the pictures. How much do you think it costs to
+							own these homes?</h7>
+							<h7>When you are ready, click the DISPLAY CORRECT ORDERING button to see how your guesses compare
+							with the actual prices of the homes. </h7>
+						</header>
+						<br><br>
+						<div class="row" >
+							<div class="col l3">
+								<figure>
+
+									<img src="images/arkansas_725k.jpg" alt="Indiana" width="230" id ="game_image1"> <br>
+<!--									<figcaption>A</figcaption>-->
+								</figure>
+							</div>
+							<div class="col l3" >
+								<figure>
+
+<!-- 									<img src="images/palo_2.5M.jpg" alt="Flowers in Chania" width="270" id ="game_image2"> <br>
+									<figcaption>C</figcaption> -->
+
+									<img src="images/Atherton_3.6M.jpg" alt="Flowers in Chania" width="230" id ="game_image2"> <br>
+<!--									<figcaption>B</figcaption>-->
+
+								</figure>
+							</div>
+							<div class="col l3">
+								<figure>
+
+<!-- 									<img src="images/Atherton_3.6M.jpg" alt="Flowers in Chania" width="270" id ="game_image3"> <br>
+									<figcaption>B</figcaption> -->
+
+									<img src="images/palo_2.5M.jpg" alt="Flowers in Chania" width="230" id ="game_image3"> <br>
+<!--									<figcaption>C</figcaption>-->
+
+								</figure>
+							</div>
+							<div class="col l3" >
+								<figure>
+
+									<img src="images/west_virginia_390k.jpg" alt="Flowers in Chania" width="230" id ="game_image4"> <br>
+<!--									<figcaption>D</figcaption>-->
+								</figure>
+							</div>
+						</div>
+
+						<div>
+							<div id="timeline"> </div>
+						</div>
+
+						<div align="center">
+							<button id="check" onclick="this.disabled=true">Display Correct Ordering</button>
+						</div>
+
+					</section>
+
+					<section class="wrapper style1">
+						<div>
+							<div id="correct"> </div>
+						</div>
+						<div id="explanation">
+						</div>
+					</section>
+				<!-- Three -->
+					<section id="three" class="wrapper">
+
+						<div class="spotlight alt">
+								<div class="image flush">
+									<a href="images/SFhouse.jpg"><img src="images/SFhouse.jpg" style="padding-right: 50px" /></a>
+									<p align="center">Typical houses in San Francisco</p>
+								</div>
+
+							<div  class="inner">
+								<h3>Why is it so hard for millennials to find a home, especially in California?<br></h3>
+								<h7>At its most basic level, it’s a story of supply and demand.
+								What does it mean? Many more people want to live in California, but there aren’t enough homes to go around.
+								However, there are a lot of uniquely Californian factors!
+								From the shape of its coastline to Proposition 13 to the tech boom in the bay area, they all have attached a painfully expensive price tag to the California dream.
+								<br>
+
+								The median price of a home is now <em>over half a million dollars.</em>
+								That number is about <em>$240,000</em> nationally.
+								More than <em>20 percent</em> of Californians pay more than half their income for housing.
+								</h7>
+							</div>
+
+						</div>
+
+
+						<br><br><h3>Changes in US Housing Price, by State</h3>
+						<p>See how the color for California is getting darker and darker, in comparison to other states!<br>
+							This means that houses in California were getting a lot more expensive than houses elsewhere.</p>
+
+								<div id="wrapper" align="center">
+									<button id="play">Play Animation</button>
+									<p id="yearmonth"> Year:
+										<span id="clock"> year </span>
+									</p>
+									<div id="US-choropleth"></div>
+								</div>
+
+						<h4>Click on a state to reveal the trends of that state's housing prices in the following area chart.</h4><br>
+
+						<div class="spotlight alt">
+							<div class="image flush"><div id="pricesAreaChart"></div></div>
+							<div  class="inner">
+								<h3>Housing price trend for 1996-2019</h3>
+								<h7 id="area-chart-info">
+									Home prices increased as more buyers competed for fewer homes. Over the past
+									few years, the Fed has steadily increased short-term interest rates, which can lead
+									people to have a tighter budget for a home at a time when home prices are rising.</h7>
+								<h7 id="area-chart-info">
+									Also look at the period of the <em>Great Recession</em> in 2008. Interestingly, the states with relatively
+									higher housing prices suffered the recession more.
+									For instance, look at how deep the trough is for <a onclick="choroplethClicked('California')">California</a>!
+									Now, compare it to <a onclick="choroplethClicked('Iowa')">Iowa</a>
+									where the price doesn't seem to decline much during the recession. <br></h7>
+								<h7 id="area-chart-info"><em>Also, try clicking other states on the choropleth above to see how the price changes at each state!</em>
+								</h7>
+							</div>
+						</div>
+						<br>
+						<br>
+
+						<h3>History of median income versus median housing price by region</h3><br>
+
+
+						<p class="scatterplotContext"> As it can be seen from this chart at the end of the animation, <strong>in 2018</strong>, the states with the greatest housing prices are <em>Hawaii</em> and <em>California</em>
+							<br>
+							While the other bubbles (states) seem to form a linear trend-line, showing a linear relationship between median income and median house price,
+							California seems to fall way above this trend-line. This might be because California has a high income gap.
+
+							An analysis of U.S. Census Bureau data by the California Budget and Policy
+                            Center (CBPC) found a widening gap between the state’s haves and have-nots.
+							This problem is more prevalent in Silicon Valley, thanks to the tech boom.</p>
+
+						<h5>Hover over year to speed or slow down animation. Hover over circles for details.</h5>
+						<div class="spotlight">
+
+							<div class="image flush"><div id="US-scatter"></div></div>
+							<div class="inner">
+
+								<blockquote><p class="quotation top-padd">
+									Price-to-income ratios topped 10.0 in both the Santa Cruz and San Jose metro areas and neared 10 in Los Angeles. On the other hand, ratios were well below 3.0 in much of the Midwest and Northeast.
+								</p></blockquote>
+
+							</div>
+
+						</div>
+						<br>
+						<br>
+						<p class="scatterplotContext">
+
+							For nearly 20 years, Silicon Valley has led the nation in economic growth.
+							But most of its workers have been excluded from reaping the rewards. <br>
+							<em>9 in 10 workers</em> in the California region make less than they did in 1997 after adjusting for inflation,
+							according to <a href="http://www.everettprogram.org/main/wp-content/uploads/TIGHTROPE-2018-REPORT.pdf"> Everet Program report</a>.
+							The study shows a pattern of income inequality on tech’s home turf that’s even worse than the national average.
+							Authors of the report point to an increasing concentration of company profits
+							going toward the salaries of a select few — largely high-skilled tech workers. <br>
+
+							<br>This has been a significant socioeconomic issue of growing popularity:<br>
+							<strong>incomes remaining relatively flat (relatively lower when adjusted by inflation) for people in the middle and at the bottom of the income range, while the cost of living is going up.</strong>
+						</p>
+
+<!--						<div class="row">-->
+<!--							<div class="col-md-8">-->
+<!--								<br><h5> History of median income versus median housing price by region </h5>-->
+<!--								<div id="US-scatter"></div>-->
+<!--								<p class="image_captions left-padd">-->
+<!--									Hover over year to speed or slow down animation. Hover over circles for details.-->
+<!--								</p>-->
+<!--							</div>-->
+<!--							<div class="col-md-4">-->
+<!--								<blockquote><p class="quotation top-padd">-->
+<!--									Price-to-income ratios topped 10.0 in both the Santa Cruz and San Jose metro areas and neared 10 in Los Angeles. On the other hand, ratios were well below 3.0 in much of the Midwest and Northeast.-->
+<!--								</p></blockquote>-->
+<!--							</div>-->
+<!--						</div>-->
+						<div style="background-color: #1e1f23"><br><h3 class="reasons-title">Moves by Reason and Income</h3><br></div>
+						<div class="spotlight alt" id="reasons-section">
+
+							<br>
+							<div class="image flush"><div id="income_slider"></div><div id="reasons"></div>
+								<p class="on-black">Counts in thousands</p>
+							</div>
+							<div class="inner">
+
+								<h7 class="reasons-context">
+									As home prices increase, some people are forced to move, as they cannot afford
+									the cost of their dwelling anymore.
+									On the chart to the right, you can view the housing-related reasons why households
+									of different incomes in the United States moved
+									in 2018 and 2019.
+								</h7>
+								<h7 class="reasons-context">
+									Through the chart, we can compare how many households moved
+									because they wanted to improve their housing situation and how many people
+									were economically encouraged or forced to downgrade. We can see that lower income
+									households are more likely than higher income households to move for
+									affordability reasons. However, low income brackets still see people move
+									to better housing and high income brackets still see downsizing.
+								</h7>
+							</div>
+<!--							<div class="image flush"><div id="homelessChart"></div></div>-->
+<!--							<div class="inner">-->
+
+<!--								<h3>Homelessness</h3>-->
+<!--								<p>While we cannot draw a direct line from increasing housing costs to homelessness,-->
+<!--									some relationship between the two should be considered. The chart to the right shows the percentage-->
+<!--									of homeless people in each state in the selected year.</p>-->
+<!--								<h3>Year:</h3>-->
+<!--								<input type="radio" name="hlyear" value="2010" checked>2010<br>-->
+<!--								<input type="radio" name="hlyear" value="2011">2011<br>-->
+<!--								<input type="radio" name="hlyear" value="2012">2012<br>-->
+<!--								<input type="radio" name="hlyear" value="2013">2013<br>-->
+<!--								<input type="radio" name="hlyear" value="2014">2014<br>-->
+<!--								<input type="radio" name="hlyear" value="2015">2015<br>-->
+<!--								<input type="radio" name="hlyear" value="2016">2016<br>-->
+<!--							</div>-->
+						</div>
+
+						<br>
+						<br>
+
+						<h3>Where are the most expensive ZIP codes in the US? </h3>
+						<p class="forceDiagramContext">
+							As you've probably heard, many parts of California have become too expensive for
+						for all but those who earn well over 100k per year. But how does Palo Alto compare to other
+						expensive ZIP codes in the US in 2019?
+							Furthermore, where is it cheapest to buy a house in the US?
+						</p>
+						<p class="forceDiagramContext">
+							The following visualization shows the top 50 most expensive US ZIP codes
+							in October 2019. The bubbles can be divided by state or geographical region.
+							You can change data category by hovering over <i> Number of Bedrooms </i>,
+							and toggle between most and least expensive within a category by hovering over
+							<i> Sort By </i>.
+						</p>
+						<p class="forceDiagramContext">The least expensive homes tend to be in the Midwest and South,
+							with Kansas, Oklahoma, and Ohio topping the least-expensive list. The most expensive ZIP codes
+							belong to Silicon Valley in CA and areas of San Francisco, as well as parts of NYC and Boston.
+						</p>
+						<br>
+
+						<div id="toolbar">
+							<p class="force-label">Group By : </p>
+							<div class="dropdown">
+								<button class="dropbtn" id="group-by-button" ></button>
+								<div class="dropdown-content">
+									<button id="all" class="button group-by-button active" value="All">     All      </button>
+									<button id="Region" class="button group-by-button" value="By Region">By Region</button>
+									<button id="State" class="button group-by-button" value="By State">By State </button>
+								</div>
+							</div>
+							<p class="force-label">Sort By : </p>
+							<div class="dropdown">
+								<button class="dropbtn" id="sort-by-button" ></button>
+								<div class="dropdown-content">
+									<button id= "Highest" class="highlowtoggle active" value="Most Expensive">Most Expensive</button>
+									<button id= "Lowest" class="highlowtoggle" value="Least Expensive">Least Expensive </button>
+								</div>
+							</div>
+							<p class="force-label"> Show me data for : </p>
+							<div class="dropdown">
+								<button class="dropbtn" id="data-cat-button"></button>
+								<div class="dropdown-content">
+									<button id= "2bed" class="datacatagory active" value="2-Bedroom Homes">2-Bedroom Homes </button>
+									<button id= "3bed" class="datacatagory" value="3-Bedroom Homes">3-Bedroom Homes </button>
+									<button id= "4bed" class="datacatagory" value="4-Bedroom Homes">4-Bedroom Homes </button>
+									<button id= "5bed" class="datacatagory" value="5+ Bedroom Homes">5+ Bedroom Homes </button>
+									<button id= "sqrfoot" class="datacatagory" value="Per Square Foot">Per Square Foot </button>
+								</div>
+							</div>
+						</div>
+						<div class="spotlight alt">
+							<div id = "forceDiagram"></div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+
+						<img src="images/jessica.png" class="bio-image" alt="Avatar">
+						<img src="images/joey.jpg" class="bio-image" alt="Avatar">
+						<img src="images/rita.jpg" class="bio-image" alt="Avatar">
+						<img src="images/katherine.jpg" class="bio-image" alt="Avatar">
+
+					</ul>
+
+					<ul class="icons">
+
+						<p class="bio-name">Jessica Wijaya </p>
+						<p class="bio-name">  Joey Noszek  </p>
+						<p class="bio-name">   Rita Cui    </p>
+						<p class="bio-name">Katherine Lazar</p>
+
+					</ul>
+					<h7 style="float:left;">Sources: </h7>
+					<br>
+					<ul class="sources">
+						<li class="sources-list">
+							<a href="http://bl.ocks.org/rgdonohue/9280446" target="_blank">Animated Choropleth example</a>
+						</li><br>
+						<li class="sources-list">
+							<a href="https://bl.ocks.org/HarryStevens/bc938c8d45008d99faed47039fbe5d49" target="_blank">Force diagram example</a>
+						</li><br>
+						<li class="sources-list">
+							<a href="https://www.vox.com/2018/10/13/17953004/wages-workers-silicon-valley-income-inequality" target="_blank">Inequality in Silicon Valley is getting worse: Wages are down for everyone but the top 10 percent</a>
+						</li><br>
+						<li class="sources-list">
+							<a href="https://calmatters.org/california-divide/2019/10/income-inequality-is-on-the-rise-in-california-in-some-counties-the-disparities-are-extreme/" target="_blank">Income inequality is on the rise in California. In some counties, the disparities are extreme</a>
+						</li><br>
+						<li class="sources-list">
+							<a href="https://www.kqed.org/news/11666284/5-reasons-californias-housing-costs-are-so-high" target="_blank">5 Reasons California's Housing Costs Are So High</a>
+						</li><br>
+<!--						<li class="sources-list">-->
+<!--							<a href="https://www.kqed.org/news/11666284/5-reasons-californias-housing-costs-are-so-high" target="_blank">5 Reasons California's Housing Costs Are So High</a>-->
+<!--						</li><br>-->
+
+					</ul>
+				</div>
+
+			</footer>
+
+		<!-- Scripts -->
+<!--		<script src="assets/js/jquery.min.js"></script>-->
+<!--		<script src="assets/js/jquery.poptrox.min.js"></script>-->
+<!--		<script src="assets/js/skel.min.js"></script>-->
+<!--		<script src="assets/js/util.js"></script>-->
+<!--		<script src="assets/js/main.js"></script>-->
+
+		<script src="assets/js/queue.min.js"></script>
+		<script src="assets/js/topojson.min.js"></script>
+		<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/d3.min.js"></script>
+		<script src="assets/js/d3-tip.js"></script>
+		<script src="https://unpkg.com/d3-simple-slider"></script>
+
+
+
+		<!-- Visualization objects -->
+		<script src="assets/js/StateChoropleth.js"></script>
+		<script src="assets/js/movingscatter.js"></script>
+		<script src="assets/js/pricesAreaChart.js"></script>
+		<script src="assets/js/timeline.js"></script>
+		<script src="assets/js/hlBars.js"></script>
+		<script src="assets/js/forceDiagram.js"></script>
+		<script src="assets/js/moveReasons.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+
+
+
+	</body>
+</html>

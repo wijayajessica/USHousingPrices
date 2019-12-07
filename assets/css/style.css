@@ -1,0 +1,500 @@
+/* custom css rules */
+
+body {
+	margin-top: 0;
+	font-family: "Baskerville", Times, serif;
+	background-color: #ffffff;
+	text-align: center
+}
+
+#vis-header {
+	height: 150vh;
+}
+
+h1{
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+img {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+
+
+#wrapper {
+	padding-top: 50px;
+}
+
+.image_captions {
+	font-size: 12px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.intro-paragraph-info {
+	text-indent: 2em;
+	text-align: left;
+	margin-top: 20px;
+	margin-right: 180px;
+	margin-left: 180px;
+}
+
+#area-chart-info {
+	text-indent: 2em;
+	text-align: left;
+	/*margin-top: 20px;*/
+	/*margin-right: 10px;*/
+	/*margin-left: 50px;*/
+}
+
+h5 {
+	color: maroon;
+	margin-left: 180px;
+	margin-right: 180px;
+}
+
+h7 {
+	color: #7d7d7f;
+}
+
+#clock {
+	 fill: maroon;
+}
+#yearmonth {
+	color: maroon;
+}
+
+.form-inline {
+	margin-left: 500px;
+	float: right;
+}
+
+.form-control {
+	margin: 5px;
+}
+
+path {
+	stroke: #333;
+	stroke-width: 1;
+}
+.state:hover {
+	stroke-width: 3;
+}
+
+.state-label {
+	text-anchor: middle;
+	font-size: 9px;
+}
+
+.legendOrdinal {
+	/*text-anchor: middle;*/
+}
+
+#pricesAreaChart {
+	margin-top: 50px;
+}
+
+.price-chart-title {
+	text-anchor: middle;
+	fill: white;
+	font-size: 20px;
+}
+
+.northdakota-caption {
+	text-anchor: end;
+	fill: white;
+	font-size: 10px;
+}
+
+.axis line,
+.axis .state {
+	fill: none;
+	stroke: #555;
+	shape-rendering: crispEdges;
+}
+
+.tick text {
+	font-family: sans-serif;
+	font-size: 11px;
+	fill: #555;
+}
+
+#priovis .x-axis text {
+	font-weight: 600;
+}
+
+.area {
+	fill: #825a5a;
+}
+
+.area.area-prices {
+	fill: #a94600;
+}
+
+#reasons .bar{
+	fill: #a94600;
+}
+
+#reasons text{
+	fill: white;
+}
+
+#income_slider text{
+	fill: white
+}
+
+.on-black {
+	color:white;
+}
+
+.reasons-context {
+	text-align: left;
+}
+
+.reasons-title{
+	text-align:center;
+	color: white;
+}
+
+.dot {
+	stroke: #858585;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.year.label {
+	fill:  #ddd;
+}
+
+.overlay {
+	fill: none;
+	pointer-events: all;
+	cursor: ew-resize;
+}
+.d3-tip {
+	font-family: "Helvetica Neue";
+	line-height: 1;
+	/*font-weight: bold;*/
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 2px;
+	pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+	box-sizing: border-box;
+	display: inline;
+	font-size: 10px;
+	width: 100%;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+	content: "\25BC";
+	margin: -1px 0 0 0;
+	top: 100%;
+	left: 0;
+	text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+	content: "\25C0";
+	margin: -4px 0 0 0;
+	top: 50%;
+	left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+	content: "\25B2";
+	margin: 0 0 1px 0;
+	top: -8px;
+	left: 0;
+	text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+	content: "\25B6";
+	margin: -4px 0 0 -1px;
+	top: 50%;
+	left: 100%;
+}
+
+.white{color:#fff}
+
+.bigtext{
+	font-size:60px
+}
+
+.display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+
+/* Quotation CSS Source: W3-CSS file https://www.w3schools.com/w3css/4/w3.css*/
+.quotation{
+	font-size: 20px;
+//margin: 0 auto;
+	quotes: "\201C""\201D""\2018""\2019";
+	padding: 10px 10px;
+	line-height: 1.4;
+}
+
+.quotation:before {
+	content: open-quote;
+	display: inline;
+	height: 0;
+	line-height: 0;
+	left: -10px;
+	position: relative;
+	top: 30px;
+	color: #ccc;
+	font-size: 3em;
+}
+.quotation::after {
+	content: close-quote;
+	display: inline;
+	height: 0;
+	line-height: 0;
+	left: 10px;
+	position: relative;
+	top: 35px;
+	color: #ccc;
+	font-size: 3em;
+}
+
+.top-padd{
+	padding-top: 50px;
+}
+
+
+/*
+    Force Diagram
+ */
+
+#forceInfo {
+	/*align-content: flex-start;*/
+	margin-bottom: 30px;
+}
+
+.force-label {
+	display: inline-block;
+}
+
+.group-by-button.active, .group-by-button.active:hover,
+.highlowtoggle.active, .highlowtoggle.active:hover,
+.datacatagory.active, .datacatagory.active:hover {
+	background: #eabea4;
+	color: #fff;
+	border-radius: 0px;
+	min-width: 100px;
+	white-space: normal;
+}
+
+
+#forceToolTip {
+	line-height: 1;
+	font-weight: bold;
+	padding: 12px;
+	background: rgba(250, 250, 250, 0.9);
+	color: #1d1d1d;
+	border-radius: 4px;
+	pointer-events: none;
+}
+
+
+/* button for choropleth*/
+#play {
+	background-color: #eabea4;
+}
+
+#play:hover {
+	background-color: white;
+}
+
+/*scatter chart tooltip*/
+
+#scatter-label {
+	color: white;
+}
+
+
+/*
+	Drop down button in force diagram
+ */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+}
+
+.dropdown-content .datacatagory {
+	color: black;
+	text-transform: uppercase;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+figcaption{
+	color: #FFF;
+}
+
+#xAxis text{
+	margin-top: 50px;
+	fill: #7d7d7f;
+	font-size: 20px;
+}
+
+.col.l6{
+	width:49.99999%
+}
+
+#left_big_pad{
+	padding-left: 180px;
+}
+
+.white{
+	color: #FFF
+}
+
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: 60px;
+	height: 28px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: lightsteelblue;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.d3-tip {
+	line-height: 1;
+	font-weight: bold;
+	padding: 12px;
+	background: #2e3133;
+	color: #fff;
+	border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+	box-sizing: border-box;
+	display: inline;
+	font-size: 10px;
+	width: 100%;
+	line-height: 1;
+	color: white;
+	content: "\25BC";
+	position: absolute;
+	text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+	margin: -1px 0 0 0;
+	top: 100%;
+	left: 0;
+}
+
+#explanation_heading{
+	padding-top: 40px;
+}
+
+#explanation_text {
+
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 40px;
+}
+
+
+.forceDiagramContext {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.scatterplotContext {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+.bio-image {
+	border-radius: 50%;
+	width: 120px;
+	display: inline-block;
+	margin-left: 45px;
+	margin-right: 45px;
+	box-shadow: 10px 5px 5px #151515;
+}
+
+.bio-name {
+	display: inline-block;
+	color: #7d7d7f;
+	margin-right: 130px;
+}
+
+.sources {
+	float: left;
+	color: #7d7d7f;
+}
+
+.sources-list {
+	float: left;
+	text-align: left;
+
+}
+
+#game_image1 {
+	border:4px solid darkred;
+}
+
+#game_image2 {
+	border:4px solid yellow;
+}
+
+#game_image3 {
+	border:4px solid darkblue;
+}
+
+#game_image4 {
+	border:4px solid white;
+}
+
+.col.l3{
+	width:25%
+}
